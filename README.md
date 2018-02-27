@@ -316,7 +316,9 @@ For example, this could be configured in your application like this:
 if (process.env.NODE_ENV !== 'development') {
   log.level = 'error';
 }
-``` 
+```
+
+>  If you're using Webpack to bundle your code, you'll have to add `'process.env.NODE_ENV': JSON.stringify('production')` in your Webpack config for the production bundle ([to envify](https://github.com/gaearon/redux-devtools/blob/master/docs/Walkthrough.md#exclude-devtools-from-production-builds)). 
 
 ## Testing
 
