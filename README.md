@@ -308,7 +308,7 @@ fooLog('baz!')
 
 ## Using in production
 
-You might restrict logging in production to only error logs. You can do this by setting `log.level`  to `error`. 
+You might restrict logging in production to only error logs. You can safely do this by setting `log.level`  to `error`. 
 
 For example, this could be configured in your application like this:
 
